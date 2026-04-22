@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <title>Sistema Operacional LEOM</title>
+    <link rel="icon" class="img" type="image/png" href="src/imgs/sol.png">
+</head> 
+<body>
+    <nav id="sidebar">
+        <div id="sidebar_content">
+    
+            <ul id="side_items">
+                <li class="side-item central">
+                    <a href="central_dados.html">
+                        <i class="fa-solid fa-chart-line" title="Central de Dados"></i>
+                        <span class="item-description">
+                            Central de Dados
+                        </span>
+                    </a>
+                </li>
+                <br>
+                <li class="side-item">
+                    <a href="home.html">
+                        <i class="fa-solid fa-clipboard-list" title="Planilhas"></i>
+                        <span class="item-description">
+                            Planilha
+                        </span>
+                    </a>
+                </li>
+    
+                <li class="side-item">
+                    <a href="fichas.html">
+                        <i class="fa-solid fa-folder-open" title="Fichas"></i>
+                        <span class="item-description">
+                            Fichas
+                        </span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div id="open">
+            <button id="open_btn">
+                <div class="content_open_btn">
+                <i id="open_btn_icon" class="fa-solid fa-arrows-left-right" title="Expandir"></i>
+                <span class="item-description">
+                    Expandir
+                </span>
+            </div>
+            </button>
+        </div>
+    </nav>
+
+    <div id="base_dropdown">
+        <div class="navbar_dropdown">
+            <div class="nav-item">
+              <div class="nav-link" id="navbarDropdown"><i class="fa-solid fa-user"></i></div>
+          
+              <div class="dropdown-menu">
+                <a href="adm.html"><i class="fa-solid fa-screwdriver-wrench"></i> Gerenciar</a>
+                <a href="login.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Sair</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    <script src="src/js/script.js"></script>
+</body>
+</html>

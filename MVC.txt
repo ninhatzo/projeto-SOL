@@ -1,0 +1,59 @@
+/projeto
+│
+├── /app
+│   ├── /controllers
+│   │   ├── LoginController.js
+│   │   ├── HomeController.js
+│   │   ├── ConsulenteController.js
+│   │   ├── UsuarioController.js
+│   │   ├── BuscaController.js
+│   │   └── ParametrosController.js
+│   │
+│   ├── /models
+│   │   ├── Usuario.js
+│   │   ├── Consulente.js
+│   │   ├── Parametro.js
+│   │   └── Auth.js
+│   │
+│   ├── /views
+│   │   ├── /login
+│   │   │   └── login.html
+│   │   │
+│   │   ├── /home
+│   │   │   └── home.html
+│   │   │
+│   │   ├── /consulentes
+│   │   │   ├── cadastro.html
+│   │   │   └── lista.html (opcional)
+│   │   │
+│   │   ├── /usuarios
+│   │   │   ├── cadastro.html
+│   │   │   └── lista.html (opcional)
+│   │   │
+│   │   ├── /busca
+│   │   │   └── busca.html
+│   │   │
+│   │   └── /parametros
+│   │       └── visualizar.html
+│   │
+│   └── /services
+│       ├── UsuarioService.js
+│       ├── ConsulenteService.js
+│       ├── ParametroService.js
+│       └── AuthService.js
+│
+├── /config
+│   ├── routes.js
+│   ├── database.js
+│   └── appConfig.js
+│
+├── /middlewares
+│   └── authMiddleware.js
+│
+├── /public
+│   ├── /css
+│   ├── /js
+│   └── /images
+│
+├── app.js
+└── package.json

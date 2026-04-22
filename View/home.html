@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <title>Sistema Operacional LEOM</title>
+    <link rel="icon" class="img" type="image/png" href="src/imgs/sol.png">
+</head> 
+<body>
+
+    <nav id="sidebar">
+        
+        <div id="sidebar_content">
+            <ul id="side_items">
+                <li class="side-item central">
+                    <a href="central_dados.html">
+                        <i class="fa-solid fa-chart-line" title="Central de Dados"></i>
+                        <span class="item-description">
+                            Central de Dados
+                        </span>
+                    </a>
+                </li>
+
+                <br>
+
+                <li class="side-item active">
+                    <a href="home.html">
+                        <i class="fa-solid fa-clipboard-list" title="Planilhas"></i>
+                        <span class="item-description">
+                            Planilha
+                        </span>
+                    </a>
+                </li>
+    
+                <li class="side-item">
+                    <a href="fichas.html">
+                        <i class="fa-solid fa-folder-open" title="Fichas"></i>
+                        <span class="item-description">
+                            Fichas
+                        </span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div id="open">
+            <button id="open_btn">
+                <div class="content_open_btn">
+                <i id="open_btn_icon" class="fa-solid fa-arrows-left-right" title="Expandir"></i>
+                <span class="item-description">
+                    Expandir
+                </span>
+            </div>
+            </button>
+        </div>
+
+    </nav>
+
+    <div id="base_dropdown">
+        <div class="navbar_dropdown">
+            <div class="nav-item">
+              <div class="nav-link" id="navbarDropdown"><i class="fa-solid fa-user"></i></div>
+          
+              <div class="dropdown-menu">
+                <a href="adm.html"><i class="fa-solid fa-screwdriver-wrench"></i> Gerenciar</a>
+                <a href="login.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Sair</a>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="home">
+            <p class="date-plan"><i class="fa-solid fa-calendar-days"></i> 16/04/2026</p>
+            <h3 class="title-plan">Atendimentos</h3>
+            <div class="plan">
+
+                <div class="entidades-plan">
+                    <div class="container-entidade">
+                        <p class="entidade-title">Pai Joaquim</p>
+                    </div>
+                    <div class="container-entidade">
+                        <p class="entidade-title">Tia Maria</p>
+                    </div>
+                    <div class="container-entidade">
+                        <p class="entidade-title">Mãe Maria</p>
+                    </div>
+                    <div class="container-entidade">
+                        <p class="entidade-title">Pena Branca</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="macas">
+                <h3 class="title-macas">Macas</h3>
+                <div class="container-macas">
+                </div>
+            </div>
+    </section>
+
+    <section id="planner">
+            <div class="dia-planner">
+                <p class="title-date">Segunda</p>
+                <div class="date">
+                        09/03/2026
+                        <br>
+                        Pai Joaquim
+                        <br>
+                        Tia Maria
+                        <br>
+                        Mãe Maria
+                        <br>
+                        Pena Branca
+                </div>
+                <div class="date">
+                    09/03/2026
+                    <br>
+                    Pai Joaquim
+                    <br>
+                    Tia Maria
+                    <br>
+                    Mãe Maria
+                    <br>
+                    Pena Branca
+            </div>
+            </div>
+
+            <div class="dia-planner">
+                <p class="title-date">Sábado</p>
+                <div class="date">
+                        14/03/2026
+                        <br>
+                        Mãe Maria
+                        <br>
+                        Pai Joaquim
+                        <br>
+                        Jurema
+                        <br>
+                        Véu do luar
+                </div>
+                <div class="date">
+                    14/03/2026
+                    <br>
+                    Mãe Maria
+                    <br>
+                    Pai Joaquim
+                    <br>
+                    Jurema
+                    <br>
+                    Véu do luar
+            </div>
+        </div>
+    </section>
+    
+    <script src="src/js/script.js"></script>
+</body>
+</html>
