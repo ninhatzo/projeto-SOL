@@ -5,7 +5,9 @@
     --secondary-color: #1ba8ff;
     --terciary-color: #3e99d1;
     --light-color: #e3e9f7;
-    --cinza: #dadada ;
+    --light-secondary: #eaf1ff;
+    --cinza: #dadada;
+    --cinza-gradiente: #c0c0c0;
     --white-color: #ffff;
     --black-color: #000000;
     --primary-gradiente: #E6E6E6;
@@ -33,13 +35,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--white-color);
+    background-color: var(--light-secondary);
     height: 100vh;
     position: relative;
     transition: all .5s;
     min-width: 80px;
     z-index: 2;
-    box-shadow: 0 2px 8px var(--cinza);
+    box-shadow: 0 2px 8px var(--cinza-gradiente);
 }
 
 #sidebar_content {
@@ -254,6 +256,8 @@ li.side-item:hover {
     display: block;
 }
 
+/*PAGE HOME*/
+
 /*Planilhas*/
 #home {
     background-color:var(--white-color);
@@ -265,6 +269,7 @@ li.side-item:hover {
     left: 8%;
     border-radius: 15px;
     padding: 12px;
+    z-index: 1;
 }
 
 .date-plan {
@@ -345,4 +350,51 @@ li.side-item:hover {
     background-color: var(--light-color);
     border-radius: 15px;
     margin-bottom: 8px;
+}
+
+/*CENTRAL DE DADOS*/
+
+#central-dados {
+    background-color:var(--white-color);
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    top: 3%;
+    left: 12%;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.title-central {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.blocos {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-color);
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+p.sub-title {
+    font-size: 20px;
+}
+
+p.number {
+    font-size: 40px;
 }
