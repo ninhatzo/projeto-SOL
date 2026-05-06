@@ -9,7 +9,8 @@
 
     <title>Sistema Operacional LEOM</title>
     <link rel="icon" class="img" type="image/png" href="src/imgs/sol.png">
-</head> 
+
+</head>
 <body>
     <nav id="sidebar">
         <div id="sidebar_content">
@@ -70,35 +71,117 @@
         </div>
     </div>
 
-    <section id="central-dados">
-        <h3 class="title-central">Consulentes cadastrados</h3>
-        <div class="container">
-            <div class="blocos">
-                <p class="sub-title">Total</p>
-                <p class="number">2586</p>
-            </div>
-            <div class="blocos">
-                <p class="sub-title">Semanal</p>
-                <p class="number">18</p>
-            </div>
-            <div class="blocos">
-                <p class="sub-title">Mensal</p>
-                <p class="number">76</p>
-            </div>
+    <div id="container">
+        <div class="tab-buttons">
+            <button class="tab-btn active" content-id="geral">
+                Geral
+            </button>
+
+            <button class="tab-btn" content-id="macas">
+                Macas
+            </button>
+
+            <button class="tab-btn" content-id="passes">
+                Passes
+            </button>
+
+            <button class="tab-btn" content-id="banhos">
+                Banhos
+            </button>
         </div>
 
-        <h3 class="title-central">Tratamentos</h3>
-        <div class="container">
-            <div class="blocos">
-                <p class="sub-title">Em andamento</p>
-                <p class="number">360</p>
+        <div class="tab-contents">
+            <div class="content" id="geral">
+
+                <div class="container">
+                    <h3 class="title-central"><i class="fa-solid fa-user-clock"></i>  Consulentes cadastrados</h3>
+                    <div class="blocos-container">
+                        <div class="blocos">
+                            <i class="fa-solid fa-users comunidade total"></i>
+                            <div class="container-dados">
+                                <p class="sub-title"> Total</p>
+                                <p class="number total">2586</p>
+                            </div>
+                        </div>
+                        <div class="blocos">
+                            <i class="fa-solid fa-calendar-week comunidade"></i>
+                            <div class="container-dados">
+                                <p class="sub-title">Semanal</p>
+                                <p class="number">18</p>
+                            </div>
+                        </div>
+                        <div class="blocos">
+                            <i class="fa-solid fa-calendar comunidade"></i>
+                            <div class="container-dados">
+                                <p class="sub-title">Mensal</p>
+                                <p class="number">76</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <h3 class="title-central"><i class="fa-solid fa-hand-holding-heart"></i>  Tratamentos</h3>
+                    <div class="blocos-container">
+                        <div class="blocos">
+                            <i class="fa-regular fa-hourglass comunidade andamento"></i>
+                            <div class="container-dados">
+                                <p class="sub-title loading">Em andamento</p>
+                                <p class="number andamento">360</p>
+                            </div>
+                        </div>
+                        <div class="blocos">
+                            <i class="fa-solid fa-clipboard-check comunidade total"></i>
+                            <div class="container-dados">
+                                <p class="sub-title">Finalizados</p>
+                                <p class="number total">1686</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="blocos">
-                <p class="sub-title">Finalizados</p>
-                <p class="number">1686</p>
+
+            <div class="content" id="macas">
+
+                <div class="infos">
+                    <h1 class="content-title">
+                        Services
+                    </h1>
+
+                    <p class="content-description">
+                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, repellat! Id ab similique velit, molestiae, aliquam illum officiis sit totam rem voluptas magnam, atque dicta magni perferendis recusandae reiciendis necessitatibus! 
+                    </p>
+                </div>
+            </div>
+
+            <div class="content" id="passes">
+
+                <div class="infos">
+                    <h1 class="content-title">
+                        Contacts
+                    </h1>
+
+                    <p class="content-description">
+                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, repellat! Id ab similique velit, molestiae, aliquam illum officiis sit totam rem voluptas magnam, atque dicta magni perferendis recusandae reiciendis necessitatibus! 
+                    </p>
+                </div>
+            </div>
+
+            <div class="content" id="banhos">
+
+                <div class="infos">
+                    <h1 class="content-title">
+                        Location
+                    </h1>
+
+                    <p class="content-description">
+                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, repellat! Id ab similique velit, molestiae, aliquam illum officiis sit totam rem voluptas magnam, atque dicta magni perferendis recusandae reiciendis necessitatibus! 
+                    </p>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <script src="src/js/script.js"></script>
 </body>
