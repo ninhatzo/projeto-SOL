@@ -380,7 +380,7 @@ li.side-item:hover {
     width: 100%;
     border: none;
     color: #020617;
-    background-color: #f0f8ff;
+    background-color: var(--white-color);
     border-radius: 8px 8px 0px 0px;
     font-weight: 500;
     padding: 8px;
@@ -443,6 +443,18 @@ li.side-item:hover {
     background-color: #ffffffa6;
     box-shadow: 0 2px 8px var(--cinza-gradiente);
     gap: 5px;
+}
+
+.totals {
+    border-bottom: 4px solid var(--total);
+}
+
+.comunidades {
+    border-bottom: 4px solid var(--terciary-color);
+}
+
+.andamentos {
+    border-bottom: 4px solid var(--andamento);
 }
 
 .sub-title {
