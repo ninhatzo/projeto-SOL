@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="src/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <title>Sistema Operacional LEOM</title>
     <link rel="icon" class="img" type="image/png" href="src/imgs/sol.png">
@@ -77,8 +78,8 @@
                 Geral
             </button>
 
-            <button class="tab-btn" content-id="macas">
-                Macas
+            <button class="tab-btn" content-id="atendimentos">
+                Atendimentos
             </button>
 
             <button class="tab-btn" content-id="passes">
@@ -94,7 +95,10 @@
             <div class="content" id="geral">
 
                 <div class="container">
-                    <h3 class="title-central"><i class="fa-solid fa-user-clock"></i>  Consulentes cadastrados</h3>
+                    <h3 class="title-central">
+                        <i class="fa-solid fa-user-clock"></i>  
+                        Consulentes cadastrados
+                    </h3>
                     <div class="blocos-container">
                         <div class="blocos totals">
                             <i class="fa-solid fa-users comunidade total"></i>
@@ -121,7 +125,10 @@
                 </div>
 
                 <div class="container">
-                    <h3 class="title-central"><i class="fa-solid fa-hand-holding-heart"></i>  Tratamentos</h3>
+                    <h3 class="title-central">
+                        <i class="fa-solid fa-hand-holding-heart"></i>  
+                        Tratamentos
+                    </h3>
                     <div class="blocos-container">
                         <div class="blocos andamentos">
                             <i class="fa-regular fa-hourglass comunidade andamento"></i>
@@ -142,16 +149,21 @@
 
             </div>
 
-            <div class="content" id="macas">
+            <div class="content" id="atendimentos">
 
                 <div class="infos">
-                    <h1 class="content-title">
-                        Services
-                    </h1>
-
-                    <p class="content-description">
-                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, repellat! Id ab similique velit, molestiae, aliquam illum officiis sit totam rem voluptas magnam, atque dicta magni perferendis recusandae reiciendis necessitatibus! 
-                    </p>
+                    <h3 class="title-central">
+                        <i class="fa-solid fa-address-card"></i>
+                        Gráfico de cadastro de Consulentes
+                    </h3>
+                    <div class="graficos">
+                        <div class="grafico mes">
+                            <canvas id="meuGraficoMes"></canvas>
+                        </div>
+                        <div class="grafico ano">
+                            <canvas id="meuGraficoAno"></canvas>
+                        </div>
+                    </div>
                 </div>
             </div>
 

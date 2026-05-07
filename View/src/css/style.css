@@ -14,6 +14,8 @@
     --sidebar-hover: #49b5e448;
     --andamento: #e4a42f;
     --total: #026402;
+    --background-tabs: #dce9f1;
+    --background-tabs-hover: #c2d9e7;
 }
 
 * {
@@ -364,7 +366,7 @@ li.side-item:hover {
     box-shadow: 0px 10px 15px -3px var(--cinza-gradiente);
     position: fixed;
     width: 80%;
-    top: 5%;
+    top: 6%;
     left: 12%;
     border-radius: 15px;
     padding: 12px;
@@ -389,11 +391,11 @@ li.side-item:hover {
 }
 
 .tab-btn.active {
-    background-color: var(--sidebar-hover);
+    background-color: var(--background-tabs);
 }
 
 .tab-btn:hover {
-    background-color: var(--primary-color);
+    background-color: var(--background-tabs-hover);
 }
 
 .content {
@@ -405,7 +407,7 @@ li.side-item:hover {
     display: flex;
     gap: 14px;
     flex-direction: column;
-    background-color: var(--sidebar-hover);
+    background-color: var(--background-tabs);
     border-radius: 0px 0px 8px 8px;
     padding: 16px;
 }
@@ -414,7 +416,8 @@ li.side-item:hover {
 .title-central {
     color: var(--title-color);
     font-family: 25px;
-    padding: 12px;
+    padding: 18px;
+    text-align: center;
 }
 
 .container {
@@ -442,11 +445,16 @@ li.side-item:hover {
     border-radius: 12px;
     background-color: #ffffffa6;
     box-shadow: 0 2px 8px var(--cinza-gradiente);
-    gap: 5px;
+    gap: 15px;
+}
+
+.blocos:hover {
+    box-shadow: 0 2px 8px var(--cinza);
 }
 
 .totals {
     border-bottom: 4px solid var(--total);
+    gap: 25px;
 }
 
 .comunidades {
@@ -491,4 +499,29 @@ i.andamento, p.andamento {
 
 p.loading {
     font-size: 18px;
+}
+
+/*ATENDIMENTO GRÁFICO*/
+.graficos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.grafico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color);
+    padding: 8px;
+    box-shadow: 0 2px 8px var(--cinza-gradiente);
+    width: 500px;
+    width: 500px;
+}
+
+.grafico:hover {
+    box-shadow: 0 2px 8px var(--cinza);
 }
